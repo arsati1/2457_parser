@@ -6,3 +6,4 @@ class BaseParser:
         response = requests.get(url)
         response.raise_for_status()
         return BeautifulSoup(response.text, 'html.parser')
+print('base')
